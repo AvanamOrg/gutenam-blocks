@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "title": "Countdown Content",
+  "name": "base/countdown-inner",
+  "category": "gutenam-blocks",
+  "parent": [
+    "base/countdown"
+  ],
+  "description": "",
+  "attributes": {
+    "uniqueID": {
+      "type": "string"
+    },
+    "location": {
+      "type": "string"
+    }
+  },
+  "supports": {
+    "inserter": false,
+    "reusable": false,
+    "html": false
+  }
+}

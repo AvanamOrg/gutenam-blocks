@@ -1,0 +1,43 @@
+{
+  "name": "base/advanced-form-telephone",
+  "category": "gutenam-blocks",
+  "textdomain": "gutenam-blocks",
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "placeholder": {
+      "type": "string",
+      "default": ""
+    },
+    "showLabel": {
+      "type": "boolean",
+      "default": true
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "ariaDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "width": {
+      "type": "array",
+      "default": [
+        "100",
+        "",
+        ""
+      ]
+    },
+    "helpText": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:editor.js",
+  "parent": [
+    "base/advanced-form"
+  ]
+}

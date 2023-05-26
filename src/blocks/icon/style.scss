@@ -1,0 +1,54 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+// Old keep for backward compatablity.
+.bst-svg-style-stacked .bst-svg-icon {
+	border: 0px solid var(--global-palette5, #444444 );
+	transition: all .3s ease-in-out;
+}
+
+.wp-block-base-icon, .wp-block-base-icon.aligncenter:not(.specificity) {
+	display: flex;
+	gap: 0.2em;
+	align-items:center;
+	justify-content: center;
+}
+.bst-svg-style-stacked .bsb-svg-icon-wrap  {
+	border: 2px solid var(--global-palette5, #444444 );
+	transition: all .3s ease-in-out;
+	padding: 20px;
+}
+.bst-svg-icon-wrap {
+	display: flex;
+	a.bst-svg-icon-link {
+		display: block;
+		border: 0;
+		text-decoration: none;
+		box-shadow: none;
+		&:hover {
+			box-shadow: none;
+		}
+	}
+}
+.bsb-icon-valign-top {
+    align-items: flex-start;
+}
+.bsb-icon-valign-middle, .bsb-icon-valign-center {
+    align-items: center;
+}
+.bsb-icon-valign-bottom {
+    align-items: flex-end;
+}
+.bsb-svg-icon-wrap {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+	border-width: 0;
+	
+	svg {
+		width: 1em;
+		height: 1em;
+	}
+}

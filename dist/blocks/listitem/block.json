@@ -1,0 +1,88 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "parent": [
+    "base/iconlist"
+  ],
+  "title": "List item",
+  "name": "base/listitem",
+  "category": "gutenam-blocks",
+  "attributes": {
+    "uniqueID": {
+      "type": "string",
+      "default": ""
+    },
+    "icon": {
+      "type": "string",
+      "default": ""
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "link": {
+      "type": "string",
+      "default": "",
+      "__experimentalRole": "content"
+    },
+    "target": {
+      "type": "string",
+      "default": "_self",
+      "__experimentalRole": "content"
+    },
+    "size": {
+      "type": "number",
+      "default": ""
+    },
+    "width": {
+      "type": "number",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": "",
+      "__experimentalRole": "content"
+    },
+    "color": {
+      "type": "string",
+      "default": ""
+    },
+    "background": {
+      "type": "string",
+      "default": ""
+    },
+    "border": {
+      "type": "string",
+      "default": ""
+    },
+    "borderRadius": {
+      "type": "number",
+      "default": ""
+    },
+    "padding": {
+      "type": "number",
+      "default": ""
+    },
+    "borderWidth": {
+      "type": "number",
+      "default": ""
+    },
+    "style": {
+      "type": "string",
+      "default": ""
+    },
+    "level": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "usesContext": [
+    "base/listIcon",
+    "base/listIconWidth"
+  ],
+  "supports": {
+    "btdynamic": true,
+    "html": false,
+    "reusable": false
+  }
+}

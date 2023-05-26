@@ -1,0 +1,1 @@
+<?php return array('dependencies' => array('base-components', 'base-helpers', 'base-icons', 'lodash', 'react', 'wp-block-editor', 'wp-blocks', 'wp-components', 'wp-data', 'wp-element', 'wp-i18n', 'wp-primitives'), 'version' => 'e7c57f6186e1bf94e102');

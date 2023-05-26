@@ -1,0 +1,98 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+
+ // Controls
+ .block-editor-block-list__block[data-type="base/spacer"].is-selected .block-editor-block-list__block-edit {
+
+	.base-spacer__resize-handler-top,
+	.base-spacer__resize-handler-bottom {
+		display: block;
+	}
+}
+.bst-inspect-tabs.bst-spacer-tabs .components-tab-panel__tabs {
+	margin-bottom: 10px;
+}
+.block-editor-block-list__block[data-type="base/spacer"]{
+    margin-top:0;
+    margin-bottom:0;
+}
+.base-spacer__resize-handler-top,
+.base-spacer__resize-handler-bottom {
+	//display: none;
+	border-radius: 50%;
+	border: 2px solid white;
+	width: 15px !important;
+	height: 15px !important;
+	position: absolute;
+	background: #0085ba;
+	padding: 0 3px 3px 0;
+	cursor: se-resize;
+	left: 50% !important;
+	margin-left: -7.5px;
+	bottom: -7.5px;
+}
+.bst-spacer-height-preview {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #777;
+    opacity: 0;
+	transition: opacity .3s ease;
+	span {
+		background: rgba(255,255,255,.7);
+		padding:0 6px;
+	}
+}
+.is-selected .bst-block-spacer:hover .bst-spacer-height-preview {
+    opacity: 1;
+}
+// Item
+.bst-block-spacer {
+    position: relative;
+    border: dashed 1px #eee;
+}
+.bst-block-spacer .bst-divider {
+    width: 100%;
+    border-top: solid 1px #eee;
+    position: absolute;
+    top: 50%;
+        margin: 0;
+    padding: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    left: 50%;
+    transform: perspective(1px) translate(-50%, -50%);
+}
+.bst-divider-stripe {
+	width: 100%;
+    border: 0;
+    position: absolute;
+    top: 50%;
+	margin: 0;
+	height:20px;
+    padding: 0;
+    left: 50%;
+	transform: perspective(1px) translate(-50%, -50%);
+}
+.bst-block-spacer.bst-block-spacer-halign-left .bst-divider, .bst-block-spacer.bst-block-spacer-halign-left .bst-divider-stripe {
+    left: 0;
+    transform: perspective(1px) translate(0%, -50%);
+}
+.bst-block-spacer.bst-block-spacer-halign-right .bst-divider, .bst-block-spacer.bst-block-spacer-halign-right .bst-divider-stripe  {
+    left: auto;
+    right:0;
+    transform: perspective(1px) translate(0%, -50%);
+}
+.bst-divider-stripe .bsb-stripes-svg {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}

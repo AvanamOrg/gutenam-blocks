@@ -1,0 +1,7 @@
+.base-controls-content-border .components-base-control.base-pop-color-control {
+  margin-bottom: 0; }
+
+.base-controls-content-border .base-pop-color-control .base-beside-label {
+  margin: 0.7em 0;
+  align-items: center;
+  display: flex; }

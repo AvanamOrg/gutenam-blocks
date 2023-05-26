@@ -1,0 +1,161 @@
+/**
+ * Front End Styles
+ */
+ .bsb-countdown-container {
+	 opacity: 0;
+	 padding:1em;
+	 border: 0 solid transparent;
+ }
+ .bsb-countdown-container:not( .bsb-countdown-has-timer) {
+    padding: 0;
+}
+.bsb-countdown-container.bsb-countdown-reveal-on-load {
+    height:0;
+    overflow: hidden;
+    transition: height 0.8s ease;
+}
+ .bsb-countdown-timer {
+    display: flex;
+	flex-wrap: wrap;
+	word-break: normal;
+	.bsb-countdown-item {
+		justify-content: center;
+		display: flex;
+		align-items: flex-end;
+		margin-right: 0.5em;
+		border:0px solid transparent;
+	}
+	.bsb-countdown-label {
+		display:flex;
+		justify-content: flex-start;
+		//flex: 1;
+	}
+	.bsb-countdown-number {
+		display:flex;
+		//flex: 1;
+		justify-content: center;
+		margin-right: 0.2em;
+	}
+}
+.bsb-countdown-timer-layout-block {
+	.bsb-countdown-item {
+		flex-direction: column;
+		align-items: center;
+		margin-right: 0.2em;
+		min-width: 1.6em;
+		padding:0.3rem;
+		&.bsb-countdown-date-item-seconds {
+			margin-right: 0;
+		}
+		&.bsb-countdown-divider-item {
+			min-width: 0;
+			padding:0.3rem 0;
+		}
+		.bsb-countdown-number {
+			margin:0;
+			font-size: 2.2rem;
+			line-height: 1;
+		}
+		.bsb-countdown-label {
+			font-size: .9rem;
+			text-transform: uppercase;
+		}
+	}
+	.bsb-countdown-item.bsb-pre-timer {
+		flex: 1 0 100%;
+		align-items: flex-start;
+		margin-right: 0;
+	}
+	.bsb-countdown-item.bsb-post-timer {
+		flex: 1 0 100%;
+		align-items: flex-start;
+		margin-right: 0;
+	}
+}
+.bsb-countdown-timer-layout-block.bsb-countdown-enable-dividers {
+	.bsb-countdown-item {
+		min-width: 1.2em;
+		&.bsb-countdown-divider-item {
+			min-width: 0;
+		}
+	}
+}
+.bsb-countdown-align-center {
+	.bsb-countdown-timer {
+		justify-content: center;
+		.bsb-pre-timer, .bsb-post-timer {
+			align-items: center;
+		}
+	}
+}
+.bsb-countdown-align-left {
+	.bsb-countdown-timer {
+		justify-content: flex-start;
+		.bsb-pre-timer, .bsb-post-timer {
+			align-items: flex-start;
+		}
+	}
+}
+.bsb-countdown-align-right {
+	.bsb-countdown-timer {
+		justify-content: flex-end;
+		.bsb-pre-timer, .bsb-post-timer {
+			align-items: flex-end;
+		}
+	}
+}
+.bsb-countdown-inner-complete {
+    display: none;
+}
+@media (max-width: 1024px) {
+	.bsb-countdown-align-tablet-center {
+		.bsb-countdown-timer {
+			justify-content: center;
+			.bsb-pre-timer, .bsb-post-timer {
+				align-items: center;
+			}
+		}
+	}
+	.bsb-countdown-align-tablet-left {
+		.bsb-countdown-timer {
+			justify-content: flex-start;
+			.bsb-pre-timer, .bsb-post-timer {
+				align-items: flex-start;
+			}
+		}
+	}
+	.bsb-countdown-align-tablet-right {
+		.bsb-countdown-timer {
+			justify-content: flex-end;
+			.bsb-pre-timer, .bsb-post-timer {
+				align-items: flex-end;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.bsb-countdown-align-mobile-center {
+		.bsb-countdown-timer {
+			justify-content: center;
+			.bsb-pre-timer, .bsb-post-timer {
+				align-items: center;
+			}
+		}
+	}
+	.bsb-countdown-align-mobile-left {
+		.bsb-countdown-timer {
+			justify-content: flex-start;
+			.bsb-pre-timer, .bsb-post-timer {
+				align-items: flex-start;
+			}
+		}
+	}
+	.bsb-countdown-align-mobile-right {
+		.bsb-countdown-timer {
+			justify-content: flex-end;
+			.bsb-pre-timer, .bsb-post-timer {
+				align-items: flex-end;
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+/**
+ * #.# Styles
+ *
+ * CSS for both Frontend+Backend.
+ */
+// Item
+.bst-block-spacer {
+    position: relative;
+    height: 60px;
+}
+.bst-block-spacer .bst-divider {
+    width: 100%;
+    border-top: solid 1px #eee;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+        margin: 0;
+    padding: 0;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    transform: perspective(1px) translate(-50%, -50%);
+}
+.bst-divider-stripe {
+	width: 100%;
+    border: 0;
+    position: absolute;
+    top: 50%;
+	margin: 0;
+	height:20px;
+    padding: 0;
+    left: 50%;
+	transform: perspective(1px) translate(-50%, -50%);
+}
+.bst-block-spacer.bst-block-spacer-halign-left .bst-divider, .bst-block-spacer.bst-block-spacer-halign-left .bst-divider-stripe {
+    left: 0;
+    transform: perspective(1px) translate(0%, -50%);
+}
+.bst-block-spacer.bst-block-spacer-halign-right .bst-divider, .bst-block-spacer.bst-block-spacer-halign-right .bst-divider-stripe  {
+    left: auto;
+    right:0;
+    transform: perspective(1px) translate(0%, -50%);
+}
+.bst-divider-stripe .bsb-stripes-svg {
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+}
+.wp-block-base-spacer.aligncenter{
+    width: 100%;
+}
+@media (max-width: 1024px) {
+    .bst-block-spacer.bst-block-spacer-thalign-center .bst-divider, .bst-block-spacer.bst-block-spacer-thalign-center .bst-divider-stripe {
+        left: 50%;
+        right:auto;
+        transform: perspective(1px) translate(-50%, -50%);
+    }
+    .bst-block-spacer.bst-block-spacer-thalign-left .bst-divider, .bst-block-spacer.bst-block-spacer-thalign-left .bst-divider-stripe {
+        left: 0;
+        transform: perspective(1px) translate(0%, -50%);
+    }
+    .bst-block-spacer.bst-block-spacer-thalign-right .bst-divider, .bst-block-spacer.bst-block-spacer-thalign-right .bst-divider-stripe  {
+        left: auto;
+        right:0;
+        transform: perspective(1px) translate(0%, -50%);
+    }
+}
+@media (max-width: 767px) {
+    .bst-block-spacer.bst-block-spacer-malign-center .bst-divider, .bst-block-spacer.bst-block-spacer-malign-center .bst-divider-stripe {
+        left: 50%;
+        right:auto;
+        transform: perspective(1px) translate(-50%, -50%);
+    }
+    .bst-block-spacer.bst-block-spacer-malign-left .bst-divider, .bst-block-spacer.bst-block-spacer-malign-left .bst-divider-stripe {
+        left: 0;
+        transform: perspective(1px) translate(0%, -50%);
+    }
+    .bst-block-spacer.bst-block-spacer-malign-right .bst-divider, .bst-block-spacer.bst-block-spacer-malign-right .bst-divider-stripe  {
+        left: auto;
+        right:0;
+        transform: perspective(1px) translate(0%, -50%);
+    }
+}
+@media (max-width: 767px) {
+	.kvs-sm-false {
+		display:none !important;
+	}
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.kvs-md-false {
+		display:none !important;
+	}
+}
+@media screen and (min-width: 1025px) {
+  .kvs-lg-false {
+  display:none !important;
+
+    }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "base/advanced-form-text",
+  "category": "gutenam-blocks",
+  "textdomain": "gutenam-blocks",
+  "attributes": {
+	"label": {
+	  "type": "string",
+	  "default": ""
+	},
+	"placeholder": {
+	  "type": "string",
+	  "default": ""
+	},
+	"showLabel": {
+	  "type": "boolean",
+	  "default": true
+	},
+	"required": {
+	  "type": "boolean",
+	  "default": false
+	},
+	"value": {
+	  "type": "string",
+	  "default": ""
+	},
+	"ariaDescription": {
+	  "type": "string",
+	  "default": ""
+	},
+	"width": {
+	  "type": "array",
+	  "default": [
+		"100",
+		"",
+		""
+	  ]
+	},
+	"helpText": {
+	  "type": "string",
+	  "default": ""
+	},
+	"name": {
+	  "type": "string",
+	  "default": ""
+	}
+  },
+  "editorScript": "file:editor.js",
+  "parent": [
+	"base/advanced-form"
+  ]
+}

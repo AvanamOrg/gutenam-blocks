@@ -1,0 +1,49 @@
+{
+  "name": "base/advanced-form-checkbox",
+  "category": "gutenam-blocks",
+  "textdomain": "gutenam-blocks",
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "showLabel": {
+      "type": "boolean",
+      "default": true
+    },
+    "required": {
+      "type": "boolean",
+      "default": false
+    },
+    "ariaDescription": {
+      "type": "string",
+      "default": ""
+    },
+    "helpText": {
+      "type": "string",
+      "default": ""
+    },
+    "options": {
+      "type": "array",
+      "default": [
+        {
+          "value": "",
+          "label": "",
+          "selected": false
+        }
+      ]
+    },
+    "width": {
+      "type": "array",
+      "default": [
+        "100",
+        "",
+        ""
+      ]
+    }
+  },
+  "editorScript": "file:editor.js",
+  "parent": [
+    "base/advanced-form"
+  ]
+}

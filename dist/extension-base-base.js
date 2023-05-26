@@ -1,0 +1,1 @@
+(()=>{"use strict";var e={};(e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})})(e);const o=window.base.icons;wp.blocks.updateCategory("gutenam-blocks",{icon:o.baseCatNewIcon}),(this.base=this.base||{})["extension-base-base"]=e})();

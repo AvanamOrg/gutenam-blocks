@@ -1,0 +1,10 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+ .block-editor-block-list__block[data-type="base/countup"] {
+    margin-bottom: 0;
+    margin-top: 0;
+}

@@ -1,0 +1,66 @@
+/* Custom Additions */
+.bsb-blocks-fluid-carousel:not(.splide-initialized):not(.tns-slider) .splide__slide.bsb-slide-item {
+	display: block;
+}
+
+.bst-blocks-carousel-init:not(.splide-initialized):not(.tns-slider)[data-slider-type="slider"] .splide__slide.bsb-slide-item {
+	display: block;
+}
+
+.bsb-gallery-type-thumbslider .bst-blocks-carousel-init.splide-initialized:not(.tns-slider)[data-slider-type="thumbnail"] .splide__slide.bsb-slide-item {
+	display: block;
+}
+
+.wp-block-base-advancedgallery .bst-blocks-carousel {
+	overflow: hidden;
+}
+
+.wp-block-base-advancedgallery .bst-blocks-carousel {
+    .splide__arrow--prev {
+        left:0px;
+    }
+    .splide__arrow--next {
+        right:0px;
+    }
+    // Temp Fix while some older css could be loaded.
+    .splide--nav>.splide__track>.splide__list>.splide__slide {
+        border:0;
+    }
+    .splide--fade > .splide__track > .splide__list > .splide__slide {
+        position: relative;
+        left: unset;
+        right: unset;
+        top: unset;
+    }
+    .splide--fade>.splide__track>.splide__list {
+        display: flex;
+    }
+    // End temp Fix.
+}
+.wp-block-base-testimonials .bst-blocks-carousel {
+    .splide__arrow--prev {
+        left:0px;
+    }
+    .splide__arrow--next {
+        right:0px;
+    }
+	.splide__arrows--rtl .splide__arrow--next {
+		right: unset;
+	}
+}
+.wp-block-base-rowlayout .bst-blocks-carousel {
+    // Temp Fix while some older css could be loaded.
+    .splide--nav>.splide__track>.splide__list>.splide__slide {
+        border:0;
+    }
+    .splide--fade > .splide__track > .splide__list > .splide__slide {
+        position: relative;
+        left: unset;
+        right: unset;
+        top: unset;
+    }
+    .splide--fade>.splide__track>.splide__list {
+        display: flex;
+    }
+    // End temp Fix.
+}

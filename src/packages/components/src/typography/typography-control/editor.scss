@@ -1,0 +1,55 @@
+.typography-family-select-form-row {
+	z-index: 200;
+    position: relative;
+    .bst-typography__control input {
+        min-height: 18px;
+    }
+	.bsb-react-select__indicator {
+		svg{
+			width: 16px;
+			height: 16px;
+		}
+	}
+	.bsb-react-select__input input {
+		min-height: 24px;
+		border-radius:0;
+	}
+	.bsb-react-select__value-container {
+		padding: 0px 8px 0px 4px;
+	}
+}
+.bsb-typography-control .components-base-control > .base-component__header, .bsb-typography-control .components-base-control > .components-base-control__label {
+	font-size: 11px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+.typography-family-select-form-row {
+	.bsb-react-select__control {
+		border-color: var(--bsb-border-color, #859CB6 );
+		min-height: 32px;
+		&:hover{
+			border-color: var(--bsb-border-dark-color, #6F8094 );
+		}
+	}
+	.bsb-react-select__indicator-separator {
+		width: 0;
+	}
+	.bsb-react-select__dropdown-indicator {
+		color: var(--bsb-border-color, #859CB6 );
+	}
+}
+
+.bsb-select-style .components-input-control__backdrop:not(.specific):not(.more-specific) {
+    border-color: var(--bsb-border-color, #859CB6 );
+}
+.bsb-textbox-style {
+	.components-base-control__label {
+		font-weight: 400;
+	}
+	.components-text-control__input {
+		border-color: var(--bsb-border-color, #859CB6 );
+	}
+	.components-input-control__backdrop:not(.specific):not(.more-specific) {
+		border-color: var(--bsb-border-color, #859CB6 );
+	}
+}

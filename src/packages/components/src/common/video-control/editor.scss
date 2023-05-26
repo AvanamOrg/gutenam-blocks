@@ -1,0 +1,19 @@
+.bsb-video-edit svg {
+    width: 1em;
+    height: 1em;
+}
+.components-base-video-btns {
+    display: flex;
+    align-items: center;
+}
+.components-base-video-btns .bsb-cta-upload-btn {
+    border: 1px solid var(--bsb-border-color, #859CB6 );
+	border-radius: 2px;
+}
+.components-base-video-background__label {
+    display: block;
+    margin-bottom: 6px;
+}
+.bsb-remove-video.bsb-cta-upload-btn {
+    margin-left: 5px;
+}

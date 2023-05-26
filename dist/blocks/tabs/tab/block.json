@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "title": "Tab",
+  "name": "base/tab",
+  "category": "gutenam-blocks",
+  "parent": [
+    "base/tabs"
+  ],
+  "attributes": {
+    "id": {
+      "type": "number",
+      "default": 1
+    },
+    "uniqueID": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "inserter": false,
+    "reusable": false,
+    "html": false,
+    "lock": false
+  },
+  "editorScript": "file:editor.js"
+}

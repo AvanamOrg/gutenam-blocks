@@ -1,0 +1,18 @@
+.bsb-step-control input.components-step-control__number {
+    height:36px;
+	flex-grow: 1;
+    text-align: center;
+}
+.bsb-flex-center {
+	display: flex;
+	align-items: center;
+}
+.bsb-step-control {
+    gap: 3px;
+}
+.bsb-step-control .components-button.bsb-step-btn {
+	color: #4A5568;
+}
+.bsb-step-control .components-button.bsb-step-btn:not(:hover) {
+	box-shadow: none;
+}

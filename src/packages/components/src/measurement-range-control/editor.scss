@@ -1,0 +1,236 @@
+.components-base-control > .base-component__header {
+    margin-bottom: 6px;
+	color: #1e1e1e;
+    font-size: 13px;
+    font-weight: 400;
+	gap: 2px;
+	display:flex;
+	.base-component__header__title {
+		flex-grow: 1;
+		display: flex;
+		align-items: center;
+	}
+	.title-reset-wrap {
+		width: 20px;
+		overflow: hidden;
+	}
+	.components-button.is-small.has-icon.is-reset {
+		background: transparent;
+		height: auto;
+		border: 0;
+		box-shadow: none;
+		padding: 2px 4px;
+		outline: 0;
+		color: #A0AEC0;
+		font-size: 18px;
+		width: 20px;
+		min-width: 20px;
+		padding: 0;
+		margin: 0 0 0 -20px;
+		display: flex;
+		height: 18px;
+	}
+	.base-component__header__title:hover {
+		.components-button.is-small.has-icon.is-reset {
+			margin: 0 0px 0 0px;
+		}
+	}
+	.components-button.has-icon.base-control-toggle {
+		background: transparent;
+		height: auto;
+		border: 0;
+		box-shadow: none;
+		padding: 2px 4px;
+		margin-bottom: 0;
+		outline: 0;
+		color: #A0AEC0;
+		width: auto;
+		font-size: 18px;
+		min-width: 0;
+		svg {
+			width: 1em;
+			height: 1em;
+		}
+	}
+}
+
+.base-controls-content .components-spacing-sizes-control__range-control {
+    flex-grow: 1;
+}
+.component-spacing-sizes-control.base-measure-range-control {
+    display: block;
+    padding: 0;
+}
+.component-spacing-sizes-control .base-controls-content .components-spacing-sizes-control__range-control {
+    flex-grow: 1;
+}
+.base-measure-range-control .base-single-measure-range-control {
+    flex-grow: 1;
+    display: block;
+	margin: 0;
+    padding: 0;
+}
+.base-measure-range-control .base-single-measure-range-control .base-controls-content {
+    display: block;
+	margin: 0;
+    padding: 0;
+	align-items: center;
+}
+.base-measure-range-control .base-single-measure-range-control .base-controls-content .base-popover-spacing-btn {
+	border: 1px solid var(--bsb-border-color, #859CB6 );
+	background: transparent;
+	color: inherit;
+	padding: 0px;
+	text-align: left;
+	width: 100%;
+	box-shadow: none;
+	display: block;
+	height: auto;
+	.base-spacing-btn-val {
+		display: block;
+		height: 30px;
+		line-height: 22px;
+		padding: 4px;
+	}
+}
+.base-measure-range-control > .base-controls-content {
+	gap:2px;
+}
+.base-measure-range-control > .base-radio-range__header .components-flex-item {
+    flex-grow: 1;
+}
+.base-measure-range-control > .base-radio-range__header  .components-button.is-small.has-icon {
+	background: transparent;
+	height: auto;
+	border: 0;
+	box-shadow: none;
+	padding: 2px 4px;
+	margin-bottom: 0;
+	outline: 0;
+	color: #A0AEC0;
+	width: auto;
+	font-size: 18px;
+    min-width: 0;
+	svg {
+		width: 1em;
+		height: 1em;
+	}
+	&.is-pressed {
+		background:var(--wp-admin-theme-color, #00669b);
+		color:white;
+	}
+}
+
+.base-measure-range-control {
+	.base-range-popover-settings .components-base-control__field {
+		margin-bottom: 0;
+	}
+	.base-range-popover-settings .components-range-control__wrapper {
+		margin-bottom: 0;
+	}
+	.components-unit-control-wrapper .components-input-control .components-input-control__label, .base-placement-label {
+		width: 100%;
+		height: 16px;
+		padding: 0;
+		line-height: 15px;
+		font-size: 7px !important;
+		margin: 0;
+		font-weight: 500;
+		display: block;
+		border: 0;
+		border-bottom: 1px solid var(--bsb-border-color, #859CB6 );
+		border-radius: 0;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	.components-unit-control-wrapper > .components-input-control {
+		gap: 0;
+		.components-input-control__input {
+			padding-left: 4px;
+			padding-right: 4px;
+		}
+	}
+	.components-unit-control-wrapper .components-input-control > .components-flex-item {
+		max-width: 100%;
+	}
+	.components-unit-control-wrapper {
+		border: 1px solid var(--bsb-border-color, #859CB6 );
+		border-radius: 2px;
+		.components-input-control__container {
+			.components-input-control__backdrop {
+				border: 0;
+				border-radius: 0;
+			}
+		}
+	}
+	.base-single-measure-range-control.bsb-measure-box-left {
+		 .components-unit-control-wrapper .components-input-control__backdrop, .base-spacing-btn-val {
+			box-shadow: inset 2px 0 var(--bsb-border-color, #859CB6 );
+		}
+	}
+	.base-single-measure-range-control.bsb-measure-box-top{
+		.components-unit-control-wrapper .components-input-control__backdrop, .base-spacing-btn-val {
+			box-shadow: inset 0px 2px var(--bsb-border-color, #859CB6 );
+		}
+	}
+	.base-single-measure-range-control.bsb-measure-box-right {
+		.components-unit-control-wrapper .components-input-control__backdrop, .base-spacing-btn-val {
+			box-shadow: inset -2px 0px var(--bsb-border-color, #859CB6 );
+		}
+	}
+	.base-single-measure-range-control.bsb-measure-box-bottom {
+		.components-unit-control-wrapper .components-input-control__backdrop, .base-spacing-btn-val {
+			box-shadow: inset 0px -2px var(--bsb-border-color, #859CB6 );
+		}
+	}
+	.base-measure-control-select {
+		appearance: none;
+		background: transparent;
+		border-radius: 0px 2px 2px 0px;
+		display: block;
+		outline: none;
+		margin: 0px;
+		min-height: auto;
+		font-family: inherit;
+		box-sizing: border-box;
+		padding: 2px 1px;
+		width: 20px;
+		color: rgb(47, 47, 47);
+		font-size: 10px;
+		line-height: 1;
+		letter-spacing: -0.5px;
+		text-transform: uppercase;
+		text-align-last: center;
+		height: 100%;
+		border: 1px solid var(--bsb-border-color, #859CB6 );
+		transition: box-shadow 0.1s linear 0s, border 0.1s linear 0s;
+		cursor: pointer;
+		&:not(:disabled):hover {
+			background-color: #EDF2F7;
+		}
+		&:focus {
+			border: 1px solid var( --wp-admin-theme-color-darker-10, #006ba1);
+			box-shadow: inset 0 0 0 1px var( --wp-admin-theme-color-darker-10, #006ba1);
+			outline-offset: 0px;
+			outline: transparent solid 2px;
+			z-index: 1;
+		}
+		&:disabled {
+			background-image: none;
+		}
+	}
+}
+.base-measure-range-control .base-single-measure-range-control.bsb-measure-input-all-inputs .base-single-unit-control {
+    display: flex;
+	.components-unit-control-wrapper {
+		flex: 1;
+	}
+}
+
+.base-measure-range-control .base-single-measure-range-control.bsb-measure-input-all-inputs .base-measure-control-select-wrapper {
+    height: 32px;
+}
+
+.base-measure-range-control .base-single-measure-range-control.bsb-measure-input-all-inputs .base-measure-control-select-wrapper .base-measure-control-select {
+    width: 26px;
+}

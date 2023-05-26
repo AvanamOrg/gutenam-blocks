@@ -1,0 +1,201 @@
+/**
+ * #.# Editor Styles
+ *
+ * CSS for just Backend enqueued after style.scss
+ * which makes it higher in priority.
+ */
+ .base-toolbar-design-library {
+    margin-left: 5px;
+	margin-right: 5px;
+    align-items: center;
+	.bsb-toolbar-prebuilt-button {
+		padding-left:12px;
+		padding-right:12px;
+		border: 1px solid #1e1e1e;
+		color: #1e1e1e;
+		background: transparent;
+		&:hover {
+			color:white;
+			border-color:var(--wp-admin-theme-color);
+			background: var(--wp-admin-theme-color);
+		}
+	}
+}
+@media (max-width: 600px) {
+.base-toolbar-design-library {
+    display: none;
+}
+}
+ .bst-block-default-palette .components-color-palette__item {
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	vertical-align: top;
+	height: 100%;
+	width: 100%;
+	border: none;
+	border-radius: 50%;
+	background: transparent;
+	box-shadow: inset 0 0 0 14px;
+	transition: box-shadow .1s ease;
+	cursor: pointer;
+}
+.bst-colors-add-new {
+    margin-bottom: 16px;
+}
+.bsb-colors-show-notice {
+    background: #fef8ee;
+    padding: 10px;
+    color: #222;
+}
+
+.bst-block-default-palette .components-color-palette__item svg {
+    color: rgba(100,100,100,1);
+}
+ .bst-colors-remove-last {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    margin-right: 14px;
+    margin-bottom: 14px;
+}
+
+.bst-colors-remove-last .components-button {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ // Button Groups
+ .bst-blocks-width-control, .bst-blocks-control-wrap {
+    padding:10px;
+ }
+.components-button-group .bst-editor-width-btn {
+    background: transparent;
+    box-shadow: none;
+    border: 1px solid var(--bsb-border-color, #859CB6 );
+    padding: 8px;
+    margin-right: 0px;
+    height: auto;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 5px;
+    text-shadow: none;
+}
+.components-button-group .bst-editor-width-btn:hover, .components-button-group .bst-editor-width-btn.is-primary, .components-button-group .bst-editor-width-btn:focus:not(:disabled):not([aria-disabled=true]) {
+    border-color: #444;
+    box-shadow:none;
+    background:#777;
+    color:white;
+}
+.components-button-group .bst-editor-width-btn.is-primary, .components-button-group .bst-editor-width-btn:focus:not(:disabled):not([aria-disabled=true]) {
+    background:#444;
+}
+.bsb-block-settings-visibility {
+  border: 1px solid var(--bsb-border-color, #859CB6 );
+  background: #fff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.bst-blocks-control-wrap .bst-block-defaults {
+	display: inline-flex;
+    padding: 4px 10px 4px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    align-items: center;
+    line-height: 24px;
+    text-align: left;
+    color: #444;
+    width: 80%;
+    box-shadow: none;
+	span.bst-block-icon {
+		display: block;
+		height: 20px;
+		margin-right: 10px;
+	}
+}
+.bst-blocks-control-wrap .bsb-block-settings-visibility:hover, {
+	background: #f9f9f9;
+}
+.bst-blocks-control-wrap .bst-block-defaults:focus {
+    box-shadow: none;
+}
+.bst-block-defaults-modal .components-panel__body .base-controls-content .components-base-control {
+    margin-bottom: 0;
+}
+.bst-blocks-control-row {
+    display: flex;
+}
+.bst-blocks-control-wrap .bst-block-settings {
+    width: 16%;
+    display: inline-flex;
+    padding: 6px 0px 6px 10px;
+    font-weight: 600;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: left;
+    color: #555;
+	box-shadow: none;
+	margin-left: 2%;
+}
+.bst-blocks-control-wrap .bst-block-settings span.dashicon {
+    width: auto;
+	height: auto;
+	font-size: 14px;
+}
+.bsb-modal-footer {
+    display: flex;
+    justify-content: space-between;
+}
+.bst-blocks-control-wrap .bst-block-settings:hover {
+	background: #f9f9f9;
+}
+.bst-blocks-control-wrap .bst-block-settings:focus {
+    box-shadow: none;
+}
+.bst-block-settings-modal .components-modal__header h1, .bst-block-defaults-modal .components-modal__header h1 {
+    font-size: 14px;
+    font-weight: bold;
+}
+.bst-block-defaults-modal button.components-button.bst-defaults-save, .bst-block-settings-modal button.components-button.bst-settings-save  {
+    margin-top: 10px;
+}
+@media (min-width: 600px){
+    .bst-block-defaults-modal {
+        width: 400px;
+    }
+}
+.bst-block-defaults-modal p {
+	margin-top:0;
+}
+.bst-block-defaults-modal .components-color-palette {
+	padding-bottom: 5px;
+	&:after {
+		clear: both;
+		display: table;
+		content: '';
+	}
+}
+.bst-block-defaults-modal .components-panel__body .components-base-control {
+	margin-bottom: 24px;
+}
+.bst-block-defaults-modal .components-panel__body:last-child {
+    margin-bottom: -16px;
+}
+.bst-block-defaults-modal .components-panel__body:first-child {
+    margin-top: 16px;
+}
+.bst-block-defaults-modal .components-panel__body {
+    border: none;
+    border-top: 1px solid #e2e4e7;
+    margin: 0 -16px;
+}
+.bst-font-family-modal {
+	min-height: 480px;
+}
+.bst-blocks-width-control .components-button-group {
+    border: 0;
+}

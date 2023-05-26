@@ -1,0 +1,19 @@
+{
+  "name": "base/advanced-form-hidden",
+  "category": "gutenam-blocks",
+  "textdomain": "gutenam-blocks",
+  "attributes": {
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "value": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "editorScript": "file:editor.js",
+  "parent": [
+    "base/advanced-form"
+  ]
+}
